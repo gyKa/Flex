@@ -2,6 +2,15 @@
 
 A minimalist [Pelican](http://blog.getpelican.com/) theme.
 
+## Requirements
+
+* NPM
+
+```
+sudo apt-get install -y nodejs npm
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+```
+
 ## Features
 
 - Mobile First
