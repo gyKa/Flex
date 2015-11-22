@@ -17,6 +17,16 @@
   </header>
   <div>
     {{ article.content }}
+
+    {% if article.galleryimages %}
+      <div>
+        {% for image in article.galleryimages %}
+          <a href="{{ SITEURL }}/images/{{ article.album }}/{{ image }}">
+            <img src="{{ SITEURL }}/thumbnails/thumbnail_square/{{ article.album }}/{{ image }}" title="{{ article.comments[image] }}">
+          </a>
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
   <div class="tag-cloud">
     <p>
